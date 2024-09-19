@@ -4,7 +4,7 @@ const config = {
 	cellWidth: 60,
 	cellSpacing: 10,
 	cellColor: "#BDBDC2",
-	textColor: "#078B07",	
+	textColor: "#0000DB",	
 
 	lambdaColor: "#C05CFF",
 	alphabetColor: "#078B07",
