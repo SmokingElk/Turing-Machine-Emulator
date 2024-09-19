@@ -1,0 +1,31 @@
+.h_comment,
+.h_comment > .h_command,
+.h_comment > .h_state,
+.h_comment > .h_alphabet_char,
+.h_comment > .h_lambda,
+.h_comment > .h_tab {
+	color: #A42A2A !important;
+	font-style: normal !important;
+}
+
+.h_command {
+	color: #078B07;
+	font-weight: bold;
+}
+
+.h_state {
+	color: #0000DB;
+}
+
+.h_alphabet_char {
+	color: #078B07;
+}
+
+.h_lambda {
+	color: #C05CFF !important;
+	font-weight: bold;
+}
+
+.h_tab {
+	border-left: 1px dotted #1d1d1e;
+}

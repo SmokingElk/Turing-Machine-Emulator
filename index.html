@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>turing interpretator</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/highlight.css">
+</head>
+<body>
+	<div class="layout">
+		<section class="code">
+			<div class="code_container">
+				<div class="code_layout">
+					<pre class="code_lines_num" id="lines_num"></pre>
+					<div class="code_field">
+						<textarea id="code_input" class="code_input" spellcheck="false"></textarea>
+						<pre id="code_text" class="code_text"></pre>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="error_window">
+			<textarea id="error_output" class="error_output" readonly></textarea>
+		</section>
+		<section class="visual" id="canvas_parent">
+			<canvas id="canvas" class="canvas"></canvas>
+		</section>
+	</div>
+
+	<script src="js/interpretator/config.js"></script>
+	<script src="js/interpretator/prepros.js"></script>
+	<script src="js/interpretator/turing core.js"></script>
+	<script src="js/interpretator/turing variants/turing implementation.js"></script>
+	<script src="js/interpretator/turing variants/turing quadro.js"></script>
+	<script src="js/interpretator/turing variants/turing quinte.js"></script>
+
+	<script src="js/ui/visualization.js"></script>
+	<script src="js/ui/execution manager.js"></script>
+	<script src="js/ui/highlighter.js"></script>
+	<script src="js/ui/code window.js"></script>
+	<script src="js/ui/editor.js"></script>
+
+
+	<!--<script src="js/interpretator/test.js"></script>-->
+</body>
+</html>
