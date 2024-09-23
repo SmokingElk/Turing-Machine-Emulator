@@ -76,7 +76,7 @@ html, body {
 	tab-size: 4;
 	line-height: 1.2;
 	font-size: 18px;
-	font-family: Consolas;
+	font-family: Consolas, monospace;
 }
 
 .code_input, .code_text {
