@@ -24,20 +24,22 @@ class ExecutionManager {
 			try {
 				this.interruptExecution = resolve;
 
-				console.log(programmText);
 				let programm = prepros(programmText);
 
-
 				this.intervalId = setInterval(() => {
-					let end = this.turing.step(programm);
+					let end;
+
+					try {
+						end = this.turing.step(programm);
+					} catch (error) {
+						this.interruptExecution = () => {};
+						this.stop();
+						reject(error);
+					}
+					
 					onchange();
 
-					if (end) {
-						clearInterval(this.intervalId);
-						this.execution = false;
-						this.interruptExecution = () => {};
-						resolve();
-					}
+					if (end) this.stop();
 
 					this.stepNum++;
 					if (this.stepNum > config.stepsLimit) throw new Error("Steps limit is over.");

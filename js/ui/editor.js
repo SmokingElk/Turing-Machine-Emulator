@@ -27,7 +27,6 @@ const getAlphabet = () => {
 }
 
 const alphabet = getAlphabet();
-console.log(alphabet);
 
 const turingQuinte = new TuringQuinte(alphabet);
 const executionManager = new ExecutionManager(turingQuinte);
@@ -50,6 +49,7 @@ window.addEventListener("keydown", async function (e) {
 
 	if (e.code === "KeyR" && e.ctrlKey && e.shiftKey) {
 		e.preventDefault();
+		executionManager.stop();
 		turingQuinte.reset();
 		errorOutput.value = "";
 	}
@@ -84,7 +84,6 @@ window.addEventListener("keydown", async function (e) {
 	if (e.code === "ArrowRight" && e.ctrlKey && !executionManager.execution) {
 		e.preventDefault();
 		turingQuinte.core.moveRight();
-		
 	}
 });
 
