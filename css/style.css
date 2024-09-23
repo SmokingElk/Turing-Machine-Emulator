@@ -111,7 +111,7 @@ html, body {
 	width: 100%;
 	height: 100%;
 	resize: none;
-	font-family: Consolas;
+	font-family: Consolas, monospace;
 	color: #A42A2A;
 	background-color: rgba(0, 0, 0, 0.0);
 	font-size: 14px;
